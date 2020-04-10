@@ -29,6 +29,9 @@ export function reducer(state,action){
      return state=[
          ...state
      ]
+     case 'clear completed tasks':
+     const stateModified=state.filter(each=> each.completed === false)
+     return stateModified;
      
     default:
     return 
