@@ -24,16 +24,17 @@ function App() {
         <form>
            <h1> Add new task </h1>
            <label> Task </label>
-          <input type='text' onChange={(e)=> addTask(e.target.value)} />
+          <input type='text' onChange={(e)=> addTask(e.target.value)} onClick={(e)=> e.target.value=''}/> 
           <i onClick={()=>dispatch({type: 'Add task', payload: task})} className="fas fa-plus-circle"> </i>
           <br></br>
           <h1> Search Tasks</h1>
           <label> Search Tasks</label>
-          <input  type='text' onChange={(e)=> addTask(e.target.value)} />
-          <i className="fas fa-search"> </i>
+          <input  type='text' onChange={(e)=>  addTask(e.target.value) } onClick={(e)=> e.target.value=''} />
+          <i className="fas fa-search" onClick={()=>dispatch({type: 'search task', payload : task})}> </i>
           <br></br>
           <h1 className='clear' >Clear completed tasks</h1>
           <i className='fas fa-trash ' onClick={()=>dispatch({type: 'clear completed tasks'})}></i>
+          {/* <button onClick={()=> dispatch({type : 'return'})}> Return Button</button> */}
         </form>
       </div>
     </>
