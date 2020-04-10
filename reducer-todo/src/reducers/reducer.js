@@ -17,7 +17,7 @@ export function reducer(state,action){
     switch(action.type){
     case 'Add task':
      console.log(state)
-     return [
+     return state = [
          ...state,
          {
          item: action.payload,
@@ -25,7 +25,11 @@ export function reducer(state,action){
          id: Date.now()
          }
      ]
-    
+     case 'toggle complete':
+     return state=[
+         ...state
+     ]
+     
     default:
     return 
     }

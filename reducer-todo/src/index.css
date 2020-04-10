@@ -25,11 +25,23 @@ body {
   margin-top: 2%;
   
 }
+.completed{
+  background: rgba(240, 227, 121, 0.3);
+  text-decoration: line-through;
+}
+
+.check{
+  display: inline;  
+}
+
+.fa-check{
+  color: greenyellow;
+}
 .sticky-note:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
+  
   animation: shake 0.5s;
 
-  /* When the animation is finished, start again */
+  
   animation-iteration-count: infinite;
 }
 

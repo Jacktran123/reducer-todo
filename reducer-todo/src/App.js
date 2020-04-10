@@ -6,13 +6,15 @@ import './App.css';
 function App() {
   const [state,dispatch]= useReducer(reducer,todoList);
   const [task,addTask]= useState('');
+  
   return (
     <>
       <div className='sticky-wrap'>
       {state.map(each => 
-        <div className='sticky-note' key={each.id}>
+        <div className='sticky-note' key={each.id} onClick={(e)=>dispatch({type: 'toggle complete'}, each.completed=!each.completed, e.target.classList.toggle('completed'))}>
            <p> Task : {each.item}</p> 
-           {each.completed ? <p> Completed : Yes</p> : <p> Completed : No </p>}
+
+           {each.completed ?<> <p className='check'> Completed : Yes</p>  <i class="fa fa-check" aria-hidden="true"/> </> : <p className='check'> Completed : No </p>}
            
         </div>
       )}
