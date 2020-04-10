@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://knowledge4you.com/wp-content/uploads/2014/01/survey-bkg-1.jpg');
+  background-size: cover;
+}
+
+.sticky-wrap{
+  display: flex;
+  flex-direction: row;
+  margin: 30px 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sticky-note{
+  background: #F0E379;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  
+}
+
+.sticky-note:hover{
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+}
+.completed{
+  background: rgba(240, 227, 121, 0.3);
+  text-decoration: line-through;
+}
+.fa-trash{
+  background: lightblue;
+  color: black;
+  padding-left: 2%;
+  padding-top: 2%;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  background: lightblue;
+  border-radius: 100px;
+  
+  
+}
+
+.fa-trash:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.clear{
+  display: inline-block;
+  margin-top: 2%; 
+}
+
+
+.fa-check{
+  color: greenyellow;
+}
+
+
+
+.fa-plus-circle{
+  color: lightblue;
+  font-size: 2rem;
+  width: 80px;
+  height: 80px;
+  padding-left: 50px;
+
+}
+
+.fa-plus-circle:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  
+
+}
+.fas{
+  margin-left: 3%;
+}
+
+.fa-search{
+  background: lightblue;
+  color: black;
+  font-size: 1rem;
+  padding: 2%;
+  border-radius: 100px;
+}
+
+.fa-search:before{
+  font-size: 1rem;
+}
+
+.fa-search:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.fa-plus-circle:before{
+ 
+ content: '\f055';
+}
+
+.form{
+  border: 1px solid  #F0E379;
+  color: white;
+  width: 30%;
+  padding: 2%;
+}
+
+input{
+  border-radius: 10px;
+  margin-left: 2%;
+}
+
+
+
+
+
+
